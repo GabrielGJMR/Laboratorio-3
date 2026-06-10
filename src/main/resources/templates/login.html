@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar sesión · GmailDashboard</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<header class="topbar">
+    <a th:href="@{/}" class="brand">✉ GmailDashboard</a>
+</header>
+<main class="container center">
+    <div class="card">
+        <h1>Iniciar sesión</h1>
+        <p>Accede con tu cuenta de Gmail para continuar.</p>
+        <a th:href="@{/oauth2/authorization/google}" class="btn-google">
+            G &nbsp; Continuar con Google
+        </a>
+        <br><br>
+        <a th:href="@{/}" class="link-back">← Volver al inicio</a>
+    </div>
+</main>
+</body>
+</html>
